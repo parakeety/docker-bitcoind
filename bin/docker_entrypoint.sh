@@ -3,7 +3,7 @@
 set -exuo pipefail
 
 BITCOIN_DIR=/bitcoin
-BITCOIN_CONF=${BITCOIN_DIR}/bitcoin.conf
+BITCOIN_CONF=${BITCOIN_DIR}/.bitcoin/bitcoin.conf
 
 # If config doesn't exist, initialize with sane defaults for running a
 # non-mining node.
