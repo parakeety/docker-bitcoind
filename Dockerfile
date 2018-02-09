@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM arm32v7/ubuntu
 MAINTAINER James O'Beirne <j@jameso.be>
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8842ce5e && \
