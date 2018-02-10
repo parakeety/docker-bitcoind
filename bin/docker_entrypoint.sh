@@ -39,11 +39,17 @@ rpcport=${BTC_RPCPORT:-8332}
 printtoconsole=${BTC_PRINTTOCONSOLE:-1}
 
 # We probably don't want a wallet.
-disablewallet=${BTC_DISABLEWALLET:-1}
+disablewallet=1
 
 # Enable an on-disk txn index. Allows use of getrawtransaction for txns not in
 # mempool.
-txindex=${BTC_TXINDEX:-0}
+txindex=1
+
+blocksonly=1
+dbcache=20
+maxsigcachesize=4
+maxconnections=4
+rpcthreads=1
 EOF
 fi
 
